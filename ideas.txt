@@ -1,0 +1,3 @@
+En la pagina de recetas:
+--Se pueden recomendar otras recetas en un aside o después de la receta.
+

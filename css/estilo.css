@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: "Quicksand", sans-serif;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/*Sección del header*/
+header {
+  background: rgb(255, 189, 189);
+}
+
+.section-header {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  max-width: 1300px;
+}
+
+h1 {
+  color: black;
+  font-weight: 700;
+  font-size: 2.2em;
+  text-align: center;
+  padding: 0.5em 1em;
+  letter-spacing: 0.05em;
+}
+
+.header-icon {
+  padding: 0 1em;
+}
+
+.header-icon > a > img {
+  width: 3em;
+}
+
+/*Sección del nav dentro del header*/
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: inline-block;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav-item {
+  padding: 1em 1.3em;
+}
+
+.nav-item > a {
+  color: black;
+}
+
+/*Sección del main*/
+.about-me {
+  background-image: url("../imgs/tabla-3.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 300px;
+  color: rgb(255, 237, 237);
+  text-align: center;
+}
+
+.about-me-intro {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-me-intro h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.about-me-intro p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+/*Sección del footer*/
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(255, 189, 189);
+  width: 100vw;
+  padding-top: 2em;
+  padding-bottom: 2.5em;
+  color: rgb(73, 73, 73);
+}
+
+.section-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.icon-list-container {
+  display: inline-block;
+  flex-grow: 1;
+}
+
+.footer-icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon {
+  padding: 0 1.5em;
+}
+
+footer a {
+  color: rgb(73, 73, 73);
+}
+
+.footer-text {
+  flex-shrink: 0.3;
+  padding: 0 2em;
+}
+
+#footer-contact-us {
+  flex-shrink: 0.3;
+}
+
+/*Media queries*/
+@media (max-width: 992px) {
+  h1 {
+    padding: 0.5em 0;
+  }
+
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header-icon {
+    order: -10;
+  }
+
+  nav {
+    order: 10;
+  }
+
+  .nav-list {
+    justify-content: space-evenly;
+  }
+
+  .nav-item {
+    display: inline-block;
+  }
+
+  footer > .footer-text {
+    display: none;
+  }
+
+  .footer-icon-list {
+    justify-content: space-evenly;
+  }
+}
