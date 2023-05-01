@@ -176,3 +176,23 @@ footer a {
     justify-content: space-evenly;
   }
 }
+
+@media (max-width: 768px) {
+  .section-footer{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .section-footer > .footer-text {
+    margin-bottom: 1.5em;
+  }
+
+  #footer-contact-us > .footer-text{
+    margin-top: 2.5em;
+  }
+
+  .icon-list-container{
+    width: 80vw;
+  }
+}
