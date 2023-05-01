@@ -128,6 +128,12 @@ footer {
   padding: 0 1.5em;
 }
 
+.footer-icon > a > i:hover {
+    color: rgba(73, 73, 73, 0.7);
+    animation: tada;
+    animation-duration: 1s;
+}
+
 footer a {
   color: rgb(73, 73, 73);
 }
