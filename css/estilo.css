@@ -69,6 +69,7 @@ nav {
 }
 
 /*Sección del main*/
+/* Página index */
 .about-me {
   background-image: url("../imgs/tabla-3.jpg");
   background-position: center;
@@ -92,6 +93,64 @@ nav {
   font-size: 1.2em;
   line-height: 1.5;
   font-weight: bold;
+}
+
+/* Página Contacto */
+.fondo {
+  background-image: url("../imgs/tabla-3.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 100px;
+  color: rgb(255, 237, 237);
+}
+.texto_sup{
+  font-size: 1.2em;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+.formulario{
+  color: black;
+  background-color: beige;
+}
+.texto_inf{
+  font-size: 1.2em;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+.Dir{
+  border: 1px solid;
+  width: 200px;
+  color: black;
+  background-color: bisque;
+  padding: 10px;
+  text-align: center;
+  font-style: italic;
+}
+.plat_cal{
+    transition: all 2s;
+}
+.plat_cal:hover{
+    transform: scale(1.2,1.2);
+    transition: all 0.5s 0.5s;
+    cursor: pointer
+}
+.plat_fri{
+  transition: all 2s;
+}
+.plat_fri:hover{
+  transform: scale(1.2,1.2);
+  transition: all 0.5s 0.5s;
+  cursor: pointer
+}
+.postre{
+  transition: all 2s;
+}
+.postre:hover{
+  transform: scale(1.2,1.2);
+  transition: all 0.5s 0.5s;
+  cursor: pointer
 }
 
 /*Sección del footer*/
