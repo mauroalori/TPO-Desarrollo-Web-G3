@@ -7,7 +7,7 @@
 body {
   position: relative;
   font-family: "Quicksand", sans-serif;
-  height: 100vh;
+  min-height: 100vh;
   overflow-x: hidden;
 }
 
@@ -155,7 +155,7 @@ nav {
 
 /*Sección del footer*/
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   background-color: rgb(255, 189, 189);
   width: 100vw;
@@ -185,6 +185,12 @@ footer {
 
 .footer-icon {
   padding: 0 1.5em;
+}
+
+.footer-icon > a > i:hover {
+    color: rgba(73, 73, 73, 0.7);
+    animation: tada;
+    animation-duration: 1s;
 }
 
 footer a {
@@ -233,5 +239,25 @@ footer a {
 
   .footer-icon-list {
     justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-footer{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .section-footer > .footer-text {
+    margin-bottom: 1.5em;
+  }
+
+  #footer-contact-us > .footer-text{
+    margin-top: 2.5em;
+  }
+
+  .icon-list-container{
+    width: 80vw;
   }
 }
