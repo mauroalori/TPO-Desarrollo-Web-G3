@@ -110,23 +110,50 @@ nav {
   font-weight: bold;
 }
 .formulario{
+  margin: auto;
+  text-align: center;
+  border: none;
+  border-radius: 40px;
   color: black;
   background-color: beige;
+  position: relative;
+  width: 80%
+  
+}
+.T2{
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+.Tmail,.Mail{
+text-align: center;
+font-weight: bold;
+display: flex;
+justify-content: center;
 }
 .texto_inf{
+  position: relative;
   font-size: 1.2em;
   text-align: center;
   color: black;
   font-weight: bold;
 }
 .Dir{
-  border: 1px solid;
+   border: 1px solid;
   width: 200px;
   color: black;
   background-color: bisque;
   padding: 10px;
   text-align: center;
   font-style: italic;
+  margin: auto;
+}
+.platos{
+  display:inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  flex: 1 1 auto;
 }
 .plat_cal{
     transition: all 2s;
@@ -151,6 +178,10 @@ nav {
   transform: scale(1.2,1.2);
   transition: all 0.5s 0.5s;
   cursor: pointer
+}
+.mapa{
+  text-align: center;
+  margin: 0 auto;
 }
 
 /*Sección del footer*/

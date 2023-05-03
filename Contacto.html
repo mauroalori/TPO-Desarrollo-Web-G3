@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Paolo's</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link rel="shortcut icon" href="favicon/cocinero.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/estilo.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,9 +46,10 @@
         <br>
         <form action="" method="get" class="formulario">
             <fieldset>
-            <legend><b>Queremos conocer de tí...</b></legend>
+            <!-- <legend><b>Queremos conocer de tí...</b></legend> -->
+            <p class="T2">Queremos conocer de tí...</p>
             <br>
-            <p>Cuales son tus preferencias? ....</p>
+            <p class="T2">Cuales son tus preferencias? ....</p>
             <br>
             <input type="checkbox" name="opcion" id="" value="Item 1">Platos calientes
             <input type="checkbox" name="opcion" id="">Platos frios
@@ -69,7 +72,7 @@
               </label>
             <br><br>
             <label for="Comentario"><b>Comentario y/o sugerencia:</b></label><br>
-            <textarea name="comentario" rows="10" cols="60" id="Comentario">Escribe tu comentario...</textarea>
+            <textarea name="comentario" rows="10" cols="40" id="Comentario">Escribe tu comentario...</textarea>
             <br><br>
             <label for="Pais"><b>Vivo en:</b></label><br>
             <select name="Pais" id="Pais">
@@ -81,7 +84,8 @@
         
             </select>
             <br><br>
-            <label for="Info"><b>Quiero recibir información:</b></label><br>
+            <label for="Info"><b>Quiero recibir información:</b></label>
+            <br>
             <input type="radio" name="Info" value="1"checked>Diaria
             <input type="radio" name="Info" value="2">Semanal
             <input type="radio" name="Info" value="2">Mensual
@@ -90,7 +94,10 @@
             <input type="submit" value="Enviar">
             <input type="reset" value="Borrar">
             <br><br>
-        </fieldset>
+            <p class="Tmail">O sino envíanos un correo a:</p>
+            <a href="mailto:paolos@paolos.com" class="Mail"><img src="imgs/LETTER.jpg" alt="Carta" width="75" height="75"></a>
+            
+          </fieldset>
         </form>
         <br><br>
         <p class="texto_inf">También puedes ubicarnos en la siguiente dirección....</p>
@@ -119,11 +126,13 @@
             <li class="footer-icon">
               <a href="#"><i class="fa fa-youtube fa-lg"></i></a>
             </li>
+            <li>
+            <a href="#"></a><i class='bx bxs-like bx-tada'></i></a>  </li>
           </ul>
         </div>
         <a href="#" id="footer-contact-us"
-          ><p class="footer-text">¡CONTACTANOS!</p></a
-        >
+          ><p class="footer-text">¡CONTACTANOS!</p></a>
+          
       </section>
     </footer>
   </body>
