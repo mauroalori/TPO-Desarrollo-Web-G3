@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paolo's</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="shortcut icon" href="favicon/cocinero.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fb08220398.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <section class="section-header">
+        <a href="index.html"><h1>Paolo's</h1></a>
+        <nav>
+          <ul class="nav-list">
+            <li class="nav-item"><a href="index.html">Home</a></li>
+            <li class="nav-item"><a href="#">Recetas</a></li>
+            <li class="nav-item"><a href="#">Consejos | Trucos</a></li>
+            <li class="nav-item"><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="header-icon">
+          <a href="index.html"><img src="imgs/cocinero.png" alt="" /></a>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="fondo">
+        <p class="texto_sup">Desea recibir información sobre nuevas recetas y consejos útiles?</p>
+        <p class="texto_sup">Déjanos tu contacto y preferencias y forma parte de de la Comunidad Paolo`s...</p>
+        <br>
+        <form action="" method="get" class="formulario">
+            <fieldset>
+            <!-- <legend><b>Queremos conocer de tí...</b></legend> -->
+            <p class="T2">Queremos conocer de tí...</p>
+            <br>
+            <p class="T2">Cuales son tus preferencias? ....</p>
+            <br>
+            <input type="checkbox" name="opcion" id="" value="Item 1">Platos calientes
+            <input type="checkbox" name="opcion" id="">Platos frios
+            <input type="checkbox" name="opcion" id="">Postres  
+            <br><br>
+            <div class="Platos">
+              <img src="imgs/caliente_1.jpg" alt="Plato_caliente"class="plat_cal">
+              <img src="imgs/frio_1.jpg" alt="Plato_frio" class="plat_fri">
+              <img src="imgs/postre_1.jpg" alt="Postre" class="postre">
+          </div>
+            <br><br>
+            <label for="Nombre"><b>Nombre:</b></label>
+            <input type="text" name="Nombre" size="30" maxlength="50" placeholder="Ingrese su nombre..." id="Nombre">
+            <br><br>
+            <label for="email"><b>e-mail:</b></label>
+            <input type="text" name="email" size="30" maxlength="50" placeholder="Ingrese su e-mail..." id="email">
+            <br><br>
+            <label for="fecha">Fecha de nacimiento:
+              <input type="date"name="fecha"   id="fecha"min="1920-01-01" max="2023-05-20">
+              </label>
+            <br><br>
+            <label for="Comentario"><b>Comentario y/o sugerencia:</b></label><br>
+            <textarea name="comentario" rows="10" cols="40" id="Comentario">Escribe tu comentario...</textarea>
+            <br><br>
+            <label for="Pais"><b>Vivo en:</b></label><br>
+            <select name="Pais" id="Pais">
+            <option value="A" selected>Argentina</option>
+            <option value="B">Uruguay</option>
+            <option value="C">Brasil</option>
+            <option value="D">Chile</option>
+            <option value="E">Resto del mundo</option>
+        
+            </select>
+            <br><br>
+            <label for="Info"><b>Quiero recibir información:</b></label>
+            <br>
+            <input type="radio" name="Info" value="1"checked>Diaria
+            <input type="radio" name="Info" value="2">Semanal
+            <input type="radio" name="Info" value="2">Mensual
+            <input type="radio" name="Info" value="2">No enviarme por ahora
+            <br><br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+            <br><br>
+            <p class="Tmail">O sino envíanos un correo a:</p>
+            <a href="mailto:paolos@paolos.com" class="Mail"><img src="imgs/LETTER.jpg" alt="Carta" width="75" height="75"></a>
+            
+          </fieldset>
+        </form>
+        <br><br>
+        <p class="texto_inf">También puedes ubicarnos en la siguiente dirección....</p>
+        <br>
+        <p class="Dir">Av. Corrientes 123 - C.A.B.A - Buenos Aires - Argentina</p>
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.054559063422!2d-58.37187172452466!3d-34.602781857448385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335328cf47ae3%3A0xfca7e6698a8bd0b4!2sAv.%20Corrientes%20123%2C%20C1043%20San%20Nicolas%2C%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2ses!4v1682286165658!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+
+        </section>
+    </main>
+
+    <footer>
+      <section class="section-footer">
+        <p class="footer-text">¡SEGUINOS EN NUESTRAS REDES!</p>
+        <div class="icon-list-container">
+          <ul class="footer-icon-list">
+            <li class="footer-icon">
+              <a href="#"><i class="fa fa-instagram fa-lg"></i></a>
+            </li>
+            <li class="footer-icon">
+              <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+            </li>
+            <li class="footer-icon">
+              <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+            </li>
+            <li class="footer-icon">
+              <a href="#"><i class="fa fa-youtube fa-lg"></i></a>
+            </li>
+            <li>
+            <a href="#"></a><i class='bx bxs-like bx-tada'></i></a>  </li>
+          </ul>
+        </div>
+        <a href="#" id="footer-contact-us"
+          ><p class="footer-text">¡CONTACTANOS!</p></a>
+          
+      </section>
+    </footer>
+  </body>
+</html>
