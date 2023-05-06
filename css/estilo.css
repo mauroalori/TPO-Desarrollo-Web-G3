@@ -155,30 +155,17 @@ justify-content: center;
   align-content: space-between;
   flex: 1 1 auto;
 }
-.plat_cal{
-    transition: all 2s;
+
+.img-platos{
+  transition: all 2s;
 }
-.plat_cal:hover{
+
+.img-platos:hover{
     transform: scale(1.2,1.2);
     transition: all 0.5s 0.5s;
     cursor: pointer
 }
-.plat_fri{
-  transition: all 2s;
-}
-.plat_fri:hover{
-  transform: scale(1.2,1.2);
-  transition: all 0.5s 0.5s;
-  cursor: pointer
-}
-.postre{
-  transition: all 2s;
-}
-.postre:hover{
-  transform: scale(1.2,1.2);
-  transition: all 0.5s 0.5s;
-  cursor: pointer
-}
+
 .mapa{
   text-align: center;
   margin: 0 auto;
