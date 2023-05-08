@@ -70,12 +70,15 @@ nav {
 
 /*Sección del main*/
 /* Página index */
-.about-me {
+main{
   background-image: url("../imgs/tabla-3.jpg");
   background-position: center;
   background-size: cover;
-  padding: 300px;
-  color: rgb(255, 237, 237);
+  color: whitesmoke;
+}
+
+.about-me {
+  padding: 5em;
   text-align: center;
 }
 
@@ -93,6 +96,38 @@ nav {
   font-size: 1.2em;
   line-height: 1.5;
   font-weight: bold;
+}
+
+.filtrado-recetas{
+  max-width: 1300px;
+  margin: auto;
+  padding-bottom: 200px;
+}
+
+.filtrado-recetas h2{
+  text-align: center;
+  padding: 2em 0;
+  text-shadow: 2px;
+}
+
+.container-imgs-filtrado-recetas{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container-imgs-filtrado-recetas > .item-imgs-filtrado-recetas{
+  padding: 2em;
+}
+
+.container-imgs-filtrado-recetas > .item-imgs-filtrado-recetas > h3{
+  text-align: center;
+  padding: 1em;
+  padding-top: 0;
+}
+
+.container-imgs-filtrado-recetas > .item-imgs-filtrado-recetas > img{
+  border-radius: 2em;
 }
 
 /* Página Contacto */
