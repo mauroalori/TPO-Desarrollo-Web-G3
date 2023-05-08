@@ -70,12 +70,15 @@ nav {
 
 /*Sección del main*/
 /* Página index */
-.about-me {
+main{
   background-image: url("../imgs/tabla-3.jpg");
   background-position: center;
   background-size: cover;
-  padding: 300px;
-  color: rgb(255, 237, 237);
+  color: whitesmoke;
+}
+
+.about-me {
+  padding: 5em;
   text-align: center;
 }
 
@@ -93,6 +96,38 @@ nav {
   font-size: 1.2em;
   line-height: 1.5;
   font-weight: bold;
+}
+
+.filtrado-recetas{
+  max-width: 1300px;
+  margin: auto;
+  padding-bottom: 200px;
+}
+
+.filtrado-recetas h2{
+  text-align: center;
+  padding: 2em 0;
+  text-shadow: 2px;
+}
+
+.container-imgs-filtrado-recetas{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container-imgs-filtrado-recetas > .item-imgs-filtrado-recetas{
+  padding: 2em;
+}
+
+.container-imgs-filtrado-recetas > .item-imgs-filtrado-recetas > h3{
+  text-align: center;
+  padding: 1em;
+  padding-top: 0;
+}
+
+.container-imgs-filtrado-recetas > .item-imgs-filtrado-recetas > img{
+  border-radius: 2em;
 }
 
 /* Página Contacto */
@@ -178,32 +213,31 @@ justify-content: center;
   background-color: lightgray;
 }
 
-/*Sección del aside*/
 .grid-container{
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 25% 75%;
   max-width: 1300px;
   margin: auto;
   padding: 5em 0;
 }
 
+/*Sección del aside*/
 .grid-container > aside{
   grid-column: 1/2;
 }
 
 .section-aside{
-  border-right: solid 1px rgb(175, 175, 175);
   padding: 0 1em 0 2em;
 }
 
 /*Sección de las recetas*/
 .grid-container > .section-recetas{
-  grid-column: 2/5;
+  grid-column: 2/3;
 }
 
 .section-recetas{
-  display: flex;
-  flex-direction: column;
+  border-left: solid 1px rgb(175, 175, 175);
+  width: 100%;
   padding: 0 2em 0 4em; 
 }
 
