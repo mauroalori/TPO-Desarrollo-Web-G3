@@ -9,12 +9,9 @@
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link rel="shortcut icon" href="favicon/cocinero.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/estilo.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Quicksand:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=PT+Serif&display=swap" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/fb08220398.js"
       crossorigin="anonymous"
@@ -22,21 +19,22 @@
   </head>
 
   <body>
-    <header>
-      <section class="section-header">
-        <a href="index.html"><h1>Paolo's</h1></a>
-        <nav>
-          <ul class="nav-list">
-            <li class="nav-item"><a href="index.html">Home</a></li>
-            <li class="nav-item"><a href="recetas.html">Recetas</a></li>
-            <li class="nav-item"><a href="consejos-trucos.html">Consejos | Trucos</a></li>
-            <li class="nav-item"><a href="contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-        <div class="header-icon">
-          <a href="index.html"><img src="imgs/cocinero.png" alt="" /></a>
-        </div>
-      </section>
+    <header class="section-header">
+      <nav class="main-nav">
+        <button class="menu-btn">
+          <img src="imgs/close.svg" alt="Close icon" />
+        </button>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html">Inicio</a></li>
+          <li class="nav-item"><a href="recetas.html">Recetas</a></li>
+          <li class="nav-item"><a href="consejos-trucos.html">Consejos | Trucos</a></li>
+          <li class="nav-item"><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <button class="menu-btn">
+        <img src="imgs/menu.svg" alt="Menu icon" />
+      </button>
+      <h1><a href="index.html">Paolo's</a><img src="imgs/cocinero.png" alt="" /></h1>
     </header>
 
     <main>
@@ -133,5 +131,6 @@
           
       </section>
     </footer>
+    <script src="js/script-index.js"></script>
   </body>
 </html>

@@ -18,6 +18,13 @@ function load() {
     imagen.addEventListener("click", filtrarRecetasPorImagenes, false);
     console.log("evento añadido");
   }
+  const menuBtn = document.querySelectorAll(".menu-btn");
+  const mainNav = document.querySelector(".main-nav");
+  menuBtn.forEach((el) => {
+    el.addEventListener("click", () => {
+      mainNav.classList.toggle("open");
+    })
+  });
 }
 
 document.addEventListener("DOMContentLoaded", load, false);
