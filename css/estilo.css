@@ -127,7 +127,7 @@ main {
   background-position: center;
   background-size: cover;
   color: #000;
-  padding-top: 80px;
+  padding-top: 80px !important; 
   min-height: calc(100vh - 90px);
 }
 
@@ -190,58 +190,87 @@ p {
 }
 
 /* Página Contacto */
-.fondo {
+.main-contacto {
   background-image: url("../imgs/tabla-2.jpg");
   background-position: center;
   background-size: cover;
-  padding: 100px;
   color: rgb(255, 237, 237);
+  padding: 0 4em;
 }
+
+.section-main-contacto {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  padding: 6em 0;
+}
+
+p {
+  padding-bottom: 1em;
+}
+
 .texto_sup{
   font-size: 1.2em;
   text-align: center;
   color: black;
   font-weight: bold;
 }
+
 .formulario{
   margin: auto;
   text-align: center;
   border: none;
-  border-radius: 40px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2), -2px -2px 2px 2px rgba(0, 0, 0, 0.2);
   color: black;
   background-color: beige;
   position: relative;
-  width: 80%
-  
+  width: 100%;
+  max-width: 1000px;
+  margin: 2em auto;
 }
+
+form label{
+  display: inline-block;
+  padding: 1em 2em;
+}
+
 .T2{
   color: black;
   font-weight: bold;
   text-align: center;
 }
-.Tmail,.Mail{
-text-align: center;
-font-weight: bold;
-display: flex;
-justify-content: center;
-}
-.texto_inf{
-  position: relative;
+
+.texto-ubicacion{
   font-size: 1.2em;
   text-align: center;
   color: black;
   font-weight: bold;
 }
-.Dir{
-   border: 1px solid;
-  width: 200px;
+
+.ubicacion-del-local{
+  border: 1px solid;
+  width: 100%;
+  max-width: 600px;
   color: black;
   background-color: bisque;
   padding: 10px;
   text-align: center;
+  margin: 4em auto;
+}
+
+.ubicacion-del-local p{
   font-style: italic;
+}
+
+.mapa-ubicacion{
   margin: auto;
 }
+
+.mapa-ubicacion iframe{
+  width: 100%;
+  max-width: 500px;
+}
+
 .platos{
   display:inline-flex;
   flex-wrap: wrap;
@@ -299,7 +328,7 @@ justify-content: center;
   padding: .5em 0;
 }
 
-/* Checkbox extraído de uiverse.io*/
+/* Checkbox extraído de uiverse.io */
 /* Hide the default checkbox */
 .checkbox-label input {
   position: absolute;
