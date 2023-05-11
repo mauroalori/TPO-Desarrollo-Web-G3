@@ -165,7 +165,7 @@ p {
 
 .filtrado-recetas h2{
   text-align: center;
-  padding: 3em 0;
+  padding: 3em 0 1.5em;
   text-shadow: 2px;
 }
 
@@ -272,7 +272,7 @@ justify-content: center;
   background-color: lightgray;
 }
 
-.grid-container{
+.main-container{
   display: grid;
   grid-template-columns: 25% 75%;
   max-width: 1300px;
@@ -281,7 +281,7 @@ justify-content: center;
 }
 
 /*Sección del aside*/
-.grid-container > aside{
+.main-container > aside{
   grid-column: 1/2;
 }
 
@@ -289,8 +289,18 @@ justify-content: center;
   padding: 0 1em 0 2em;
 }
 
+.seleccion-de-filtros{
+  display: flex;
+  flex-direction: column;
+  padding: 1em 2em 0;
+}
+
+.seleccion-de-filtros .filtro{
+  padding: .5em 0;
+}
+
 /*Sección de las recetas*/
-.grid-container > .section-recetas{
+.main-container > .section-recetas{
   grid-column: 2/3;
 }
 
@@ -359,7 +369,7 @@ footer a {
 
   header {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .header-icon {
@@ -376,6 +386,38 @@ footer a {
 
   .nav-item {
     display: inline-block;
+  }
+
+  .main-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    margin: auto;
+    padding: 5em 0;
+  }
+  
+  /*Sección del aside*/
+  .main-container > aside{
+    grid-column: none;
+  }
+  
+  .section-aside, .section-recetas{
+    padding: 0 5em 1em;
+  }
+  
+  /*Sección de las recetas*/
+  .main-container > .section-recetas{
+    grid-column: none;
+  }
+
+  .seleccion-de-filtros{
+    flex-direction: row;
+    padding: 1em 0 0;
+    flex-wrap: wrap;
+  }
+
+  .seleccion-de-filtros .filtro{
+    padding: 0 1em;
   }
 
   footer > .footer-text {
