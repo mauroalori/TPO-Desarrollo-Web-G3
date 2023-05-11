@@ -127,7 +127,7 @@ main {
   background-position: center;
   background-size: cover;
   color: #000;
-  padding-top: 80px;
+  padding-top: 80px !important; 
   min-height: calc(100vh - 90px);
 }
 
@@ -165,7 +165,7 @@ p {
 
 .filtrado-recetas h2{
   text-align: center;
-  padding: 3em 0;
+  padding: 3em 0 1.5em;
   text-shadow: 2px;
 }
 
@@ -190,58 +190,91 @@ p {
 }
 
 /* Página Contacto */
-.fondo {
+.main-contacto {
   background-image: url("../imgs/tabla-2.jpg");
   background-position: center;
   background-size: cover;
-  padding: 100px;
   color: rgb(255, 237, 237);
+  padding: 0 4em;
 }
+
+.section-main-contacto {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  padding: 6em 0;
+}
+
+p {
+  padding-bottom: 1em;
+}
+
 .texto_sup{
   font-size: 1.2em;
   text-align: center;
   color: black;
   font-weight: bold;
 }
+
 .formulario{
   margin: auto;
   text-align: center;
   border: none;
-  border-radius: 40px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2), -2px -2px 2px 2px rgba(0, 0, 0, 0.2);
   color: black;
   background-color: beige;
   position: relative;
-  width: 80%
-  
+  width: 100%;
+  max-width: 1000px;
+  margin: 2em auto;
 }
+
+form label{
+  display: inline-block;
+  padding: 1em 2em;
+}
+
+textarea{
+  resize: none;
+}
+
 .T2{
   color: black;
   font-weight: bold;
   text-align: center;
 }
-.Tmail,.Mail{
-text-align: center;
-font-weight: bold;
-display: flex;
-justify-content: center;
-}
-.texto_inf{
-  position: relative;
+
+.texto-ubicacion{
   font-size: 1.2em;
   text-align: center;
   color: black;
   font-weight: bold;
 }
-.Dir{
-   border: 1px solid;
-  width: 200px;
+
+.ubicacion-del-local{
+  border: 1px solid;
+  width: 100%;
+  max-width: 600px;
   color: black;
   background-color: bisque;
   padding: 10px;
   text-align: center;
+  margin: 4em auto;
+}
+
+.ubicacion-del-local p{
   font-style: italic;
+}
+
+.mapa-ubicacion{
   margin: auto;
 }
+
+.mapa-ubicacion iframe{
+  width: 100%;
+  max-width: 500px;
+}
+
 .platos{
   display:inline-flex;
   flex-wrap: wrap;
@@ -272,7 +305,7 @@ justify-content: center;
   background-color: lightgray;
 }
 
-.grid-container{
+.main-container{
   display: grid;
   grid-template-columns: 25% 75%;
   max-width: 1300px;
@@ -281,7 +314,7 @@ justify-content: center;
 }
 
 /*Sección del aside*/
-.grid-container > aside{
+.main-container > aside{
   grid-column: 1/2;
 }
 
@@ -289,8 +322,89 @@ justify-content: center;
   padding: 0 1em 0 2em;
 }
 
+.seleccion-de-filtros{
+  display: flex;
+  flex-direction: column;
+  padding: 1em 2em 0;
+}
+
+.seleccion-de-filtros .filtro{
+  padding: .5em 0;
+}
+
+/* Checkbox extraído de uiverse.io */
+/* Hide the default checkbox */
+.checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+ }
+ 
+ .checkbox-label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 1em;
+  user-select: none;
+  margin: auto;
+ }
+
+ .checkbox-label p{
+  display: inline-block;
+  padding-left: .4em;
+ }
+
+ /* Create a custom checkbox */
+ .checkmark {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 1em;
+  width: 1em;
+  background: #606062;
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.30), 0px 1px 1px rgba(0,5);
+  
+ }
+ 
+ /* When the checkbox is checked, add a blue background */
+ .checkbox-label input:checked ~ .checkmark {
+  background-image: linear-gradient(#b9e9b3,#a8e4a0);
+ }
+
+ .checkbox-label input:not(:checked) ~ p {
+  color: rgb(130, 130, 130);
+ }
+ 
+ /* Create the checkmark/indicator (hidden when not checked) */
+ .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+ }
+ 
+ /* Show the checkmark when checked */
+ .checkbox-label input:checked ~ .checkmark:after {
+  display: block;
+ }
+ 
+ /* Style the checkmark/indicator */
+ .checkbox-label .checkmark:after {
+  left: 0.35em;
+  top: 0.15em;
+  width: 0.2em;
+  height: 0.4em;
+  border: solid white;
+  border-width: 0 0.15em 0.15em 0;
+  transform: rotate(45deg);
+  
+ }
+
 /*Sección de las recetas*/
-.grid-container > .section-recetas{
+.main-container > .section-recetas{
   grid-column: 2/3;
 }
 
@@ -359,7 +473,7 @@ footer a {
 
   header {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .header-icon {
@@ -376,6 +490,38 @@ footer a {
 
   .nav-item {
     display: inline-block;
+  }
+
+  .main-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    margin: auto;
+    padding: 5em 0;
+  }
+  
+  /*Sección del aside*/
+  .main-container > aside{
+    grid-column: none;
+  }
+  
+  .section-aside, .section-recetas{
+    padding: 0 5em 1em;
+  }
+  
+  /*Sección de las recetas*/
+  .main-container > .section-recetas{
+    grid-column: none;
+  }
+
+  .seleccion-de-filtros{
+    flex-direction: row;
+    padding: 1em 0 0;
+    flex-wrap: wrap;
+  }
+
+  .seleccion-de-filtros .filtro{
+    padding: 0 1em;
   }
 
   footer > .footer-text {

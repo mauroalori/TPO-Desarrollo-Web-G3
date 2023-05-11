@@ -35,74 +35,68 @@
         <img src="imgs/menu.svg" alt="Menu icon" />
       </button>
       <h1><a href="index.html">Paolo's</a><img src="imgs/cocinero.png" alt="" /></h1>
+      <span id="item-para-alinear-nav"></span>
     </header>
 
-    <main>
-      <section class="fondo">
+    <main class="main-contacto">
+      <section class="section-main-contacto">
         <p class="texto_sup">Desea recibir información sobre nuevas recetas y consejos útiles?</p>
         <p class="texto_sup">Déjanos tu contacto y preferencias y forma parte de de la Comunidad Paolo`s...</p>
-        <br>
-        <form action="" method="get" class="formulario">
-            <!-- <legend><b>Queremos conocer de tí...</b></legend> -->
-            <p class="T2">Queremos conocer de tí...</p>
+
+        <form action="" method="get" class="formulario" onsubmit="return validarFormulario()">
+            <label for="nombre"><b>Nombre:</b>
+              <input type="text" name="nombre" size="30" maxlength="50" placeholder="Ingrese su nombre..." id="nombre">
+            </label>
             <br>
-            <p class="T2">Cuales son tus preferencias? ....</p>
+            <label for="email"><b>e-mail:</b>
+              <input type="text" name="email" size="30" maxlength="50" placeholder="Ingrese su e-mail..." id="email">
+            </label>
             <br>
+            <label for="comentario"><b>Comentario y/o sugerencia:</b>
+              <br>
+              <textarea name="comentario" rows="8" cols="45" id="comentario" placeholder="Escribe tu comentario (máximo 300 caracteres)" maxlength="300"></textarea>
+            </label>
+            <br>
+            <label for="pais"><b>Vivo en:</b>
+              <select name="pais" id="pais">
+                <option value="ARG" selected>Argentina</option>
+                <option value="URU">Uruguay</option>
+                <option value="BRA">Brasil</option>
+                <option value="CHI">Chile</option>
+                <option value="REST">Resto del mundo</option>
+              </select>
+            </label>
+            <br>
+            <br>
+
+            <p class="T2">Cuales son tus preferencias?</p>
+
             <input type="checkbox" name="opcion" id="" value="Item 1">Platos calientes
             <input type="checkbox" name="opcion" id="">Platos frios
-            <input type="checkbox" name="opcion" id="">Postres  
-            <br><br>
-            <div class="Platos">
-              <img src="imgs/caliente_1.jpg" alt="Plato_caliente"class="plat_cal img-platos">
-              <img src="imgs/frio_1.jpg" alt="Plato_frio" class="plat_fri img-platos">
-              <img src="imgs/postre_1.jpg" alt="Postre" class="postre img-platos">
-            </div>
-            <br><br>
-            <label for="Nombre"><b>Nombre:</b></label>
-            <input type="text" name="Nombre" size="30" maxlength="50" placeholder="Ingrese su nombre..." id="Nombre">
-            <br><br>
-            <label for="email"><b>e-mail:</b></label>
-            <input type="text" name="email" size="30" maxlength="50" placeholder="Ingrese su e-mail..." id="email">
-            <br><br>
-            <label for="fecha">Fecha de nacimiento:
-              <input type="date"name="fecha"   id="fecha"min="1920-01-01" max="2023-05-20">
-              </label>
-            <br><br>
-            <label for="Comentario"><b>Comentario y/o sugerencia:</b></label><br>
-            <textarea name="comentario" rows="10" cols="40" id="Comentario">Escribe tu comentario...</textarea>
-            <br><br>
-            <label for="Pais"><b>Vivo en:</b></label><br>
-            <select name="Pais" id="Pais">
-            <option value="A" selected>Argentina</option>
-            <option value="B">Uruguay</option>
-            <option value="C">Brasil</option>
-            <option value="D">Chile</option>
-            <option value="E">Resto del mundo</option>
-        
-            </select>
-            <br><br>
-            <label for="Info"><b>Quiero recibir información:</b></label>
+            <input type="checkbox" name="opcion" id="">Postres
             <br>
-            <input type="radio" name="Info" value="1"checked>Diaria
-            <input type="radio" name="Info" value="2">Semanal
-            <input type="radio" name="Info" value="2">Mensual
-            <input type="radio" name="Info" value="2">No enviarme por ahora
-            <br><br>
+            <br>
+            <label for="frecuencia-informacion"><b>Quiero recibir información:</b>
+              <input type="radio" name="frecuencia-informacion" value="diaria" checked>Diaria
+              <input type="radio" name="frecuencia-informacion" value="semanal">Semanal
+              <input type="radio" name="frecuencia-informacion" value="mensual">Mensual
+              <input type="radio" name="frecuencia-informacion" value="none">No enviarme por ahora
+            </label>
+            <br>
             <input type="submit" value="Enviar">
             <input type="reset" value="Borrar">
-            <br><br>
-            <p class="Tmail">O sino envíanos un correo a:</p>
-            <a href="mailto:paolos@paolos.com" class="Mail"><img src="imgs/LETTER.jpg" alt="Carta" width="75" height="75"></a>
             
         </form>
-        <br><br>
-        <p class="texto_inf">También puedes ubicarnos en la siguiente dirección....</p>
-        <br>
-        <p class="Dir">Av. Corrientes 123 - C.A.B.A - Buenos Aires - Argentina</p>
-        <br>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.054559063422!2d-58.37187172452466!3d-34.602781857448385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335328cf47ae3%3A0xfca7e6698a8bd0b4!2sAv.%20Corrientes%20123%2C%20C1043%20San%20Nicolas%2C%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2ses!4v1682286165658!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
 
-        </section>
+        <div class="ubicacion-del-local">
+          <p class="texto-ubicacion">También podés encontrarme en la siguiente dirección...</p>
+          <p class="direccion">Av. Corrientes 123 - C.A.B.A - Buenos Aires - Argentina</p>
+          <div class="mapa-ubicacion">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.054559063422!2d-58.37187172452466!3d-34.602781857448385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335328cf47ae3%3A0xfca7e6698a8bd0b4!2sAv.%20Corrientes%20123%2C%20C1043%20San%20Nicolas%2C%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2ses!4v1682286165658!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+          </div>
+        </div>
+
+      </section>
     </main>
 
     <footer>
@@ -130,5 +124,6 @@
       </section>
     </footer>
     <script src="js/script-index.js"></script>
+    <script src="js/validacion-form.js"></script>
   </body>
 </html>
