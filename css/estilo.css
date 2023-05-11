@@ -299,6 +299,10 @@ justify-content: center;
   padding: .5em 0;
 }
 
+.seleccion-de-filtros [name="filtro-platos"]{
+  appearance: none;
+}
+
 /*Sección de las recetas*/
 .main-container > .section-recetas{
   grid-column: 2/3;
