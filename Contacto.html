@@ -43,32 +43,32 @@
         <p class="texto_sup">Desea recibir información sobre nuevas recetas y consejos útiles?</p>
         <p class="texto_sup">Déjanos tu contacto y preferencias y forma parte de de la Comunidad Paolo`s...</p>
 
-        <form action="" method="get" class="formulario">
-            <label for="Nombre"><b>Nombre:</b>
-              <input type="text" name="Nombre" size="30" maxlength="50" placeholder="Ingrese su nombre..." id="Nombre">
+        <form action="" method="get" class="formulario" onsubmit="return validarFormulario()">
+            <label for="nombre"><b>Nombre:</b>
+              <input type="text" name="nombre" size="30" maxlength="50" placeholder="Ingrese su nombre..." id="nombre">
             </label>
             <br>
             <label for="email"><b>e-mail:</b>
               <input type="text" name="email" size="30" maxlength="50" placeholder="Ingrese su e-mail..." id="email">
             </label>
             <br>
-            <label for="Comentario"><b>Comentario y/o sugerencia:</b>
+            <label for="comentario"><b>Comentario y/o sugerencia:</b>
               <br>
-              <textarea name="comentario" rows="10" cols="40" id="Comentario" placeholder="Escribe tu comentario..."></textarea>
+              <textarea name="comentario" rows="8" cols="45" id="comentario" placeholder="Escribe tu comentario (máximo 300 caracteres)" maxlength="300"></textarea>
             </label>
             <br>
             <label for="pais"><b>Vivo en:</b>
               <select name="pais" id="pais">
-                <option value="A" selected>Argentina</option>
-                <option value="B">Uruguay</option>
-                <option value="C">Brasil</option>
-                <option value="D">Chile</option>
-                <option value="E">Resto del mundo</option>
+                <option value="ARG" selected>Argentina</option>
+                <option value="URU">Uruguay</option>
+                <option value="BRA">Brasil</option>
+                <option value="CHI">Chile</option>
+                <option value="REST">Resto del mundo</option>
               </select>
             </label>
             <br>
             <br>
-            
+
             <p class="T2">Cuales son tus preferencias?</p>
 
             <input type="checkbox" name="opcion" id="" value="Item 1">Platos calientes
@@ -124,5 +124,6 @@
       </section>
     </footer>
     <script src="js/script-index.js"></script>
+    <script src="js/validacion-form.js"></script>
   </body>
 </html>

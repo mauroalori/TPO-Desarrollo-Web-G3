@@ -234,6 +234,10 @@ form label{
   padding: 1em 2em;
 }
 
+textarea{
+  resize: none;
+}
+
 .T2{
   color: black;
   font-weight: bold;
