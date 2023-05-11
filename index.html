@@ -7,12 +7,9 @@
     <title>Paolo's</title>
     <link rel="shortcut icon" href="favicon/cocinero.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/estilo.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Quicksand:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=PT+Serif&display=swap" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/fb08220398.js"
       crossorigin="anonymous"
@@ -23,22 +20,22 @@
     />
   </head>
   <body>
-    <header>
-      <section class="section-header">
-        <a href="index.html"><h1>Paolo's</h1></a>
-        <nav>
-          <ul class="nav-list">
-            <li class="nav-item"><a href="index.html">Inicio</a></li>
-            <li class="nav-item"><a href="recetas.html">Recetas</a></li>
-            <li class="nav-item"><a href="consejos-trucos.html">Consejos | Trucos</a></li>
-            <li class="nav-item"><a href="contacto.html">Contacto</a></li>
-          </ul>
-        </nav>
-        <div class="header-icon">
-          <a href="index.html"><img src="imgs/cocinero.png" alt="" /></a>
-        </div>
-        <script src="js/script-index.js"></script>
-      </section>
+    <header class="section-header">
+      <nav class="main-nav">
+        <button class="menu-btn">
+          <img src="imgs/close.svg" alt="Close icon" />
+        </button>
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html">Inicio</a></li>
+          <li class="nav-item"><a href="recetas.html">Recetas</a></li>
+          <li class="nav-item"><a href="consejos-trucos.html">Consejos | Trucos</a></li>
+          <li class="nav-item"><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <button class="menu-btn">
+        <img src="imgs/menu.svg" alt="Menu icon" />
+      </button>
+      <h1><a href="index.html">Paolo's</a><img src="imgs/cocinero.png" alt="" /></h1>
     </header>
 
     <main>
@@ -79,16 +76,16 @@
         <div class="icon-list-container">
           <ul class="footer-icon-list">
             <li class="footer-icon">
-              <a href="#"><i class="fa fa-instagram fa-lg"></i></a>
+              <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
             </li>
             <li class="footer-icon">
-              <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+              <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
             </li>
             <li class="footer-icon">
-              <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+              <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter fa-lg" ></i></a>
             </li>
             <li class="footer-icon">
-              <a href="#"><i class="fa fa-youtube fa-lg"></i></a>
+              <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube fa-lg"></i></a>
             </li>
           </ul>
         </div>
@@ -97,5 +94,6 @@
         >
       </section>
     </footer>
+    <script src="js/script-index.js"></script>
   </body>
 </html>
