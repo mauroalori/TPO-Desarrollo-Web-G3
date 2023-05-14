@@ -258,9 +258,13 @@ li {
 
 @media (max-width: 500px){
     li {
-      text-align: left;}}
-
-.texto-ubicacion{
+      text-align: left;};
+    textarea{
+      width: 10px;
+    }
+    }
+     
+  .texto-ubicacion{
   font-size: 1.2em;
   text-align: center;
   color: black;
