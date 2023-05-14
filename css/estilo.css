@@ -189,32 +189,36 @@ p {
   border-radius: 2em;
 }
 
+.item-imgs-filtrado-recetas{
+  transition: all 2s;}
+
+.item-imgs-filtrado-recetas:hover{
+  transform: scale(1.2,1.2);
+  transition: all 0.5s 0.5s;
+  cursor: pointer}
+
 /* Página Contacto */
 .main-contacto {
   background-image: url("../imgs/tabla-2.jpg");
   background-position: center;
   background-size: cover;
   color: rgb(255, 237, 237);
-  padding: 0 4em;
-}
+  padding: 0 4em;}
 
 .section-main-contacto {
   width: 100%;
   max-width: 1300px;
   margin: auto;
-  padding: 6em 0;
-}
+  padding: 6em 0;}
 
 p {
-  padding-bottom: 1em;
-}
+  padding-bottom: 1em;}
 
 .texto_sup{
   font-size: 1.2em;
   text-align: center;
   color: black;
-  font-weight: bold;
-}
+  font-weight: bold;}
 
 .formulario{
   margin: auto;
@@ -229,30 +233,38 @@ p {
   max-width: 800px;
   margin: 2em auto;
   padding-bottom: 20px;
-  box-shadow: 10px 10px 10px rgb(105, 103, 103);
-}
+  box-shadow: 10px 10px 10px rgb(105, 103, 103);}
 
 form label{
   display: inline-block;
-  padding: 1em 2em;
-}
+  padding: 1em 2em;}
 
 textarea{
-  resize: none;
-}
+  resize: none;}
 
 .T2{
   color: black;
   font-weight: bold;
-  text-align: center;
-}
+  text-align: center;}
+
+/* Media Queries */
+@media (min-width: 900px){
+li {
+  display: inline;}}
+
+@media (min-width: 500px){
+  li {
+    text-align: left;}}
+
+@media (max-width: 500px){
+    li {
+      text-align: left;}}
 
 .texto-ubicacion{
   font-size: 1.2em;
   text-align: center;
   color: black;
-  font-weight: bold;
-}
+  font-weight: bold;}
 
 .ubicacion-del-local{
   border: 1px solid;
@@ -264,44 +276,36 @@ textarea{
   padding: 10px;
   text-align: center;
   margin: 4em auto;
-  box-shadow: 10px 10px 10px rgb(105, 103, 103);
-}
+  box-shadow: 10px 10px 10px rgb(105, 103, 103);}
 
 .ubicacion-del-local p{
-  font-style: italic;
-}
+  font-style: italic;}
 
 .mapa-ubicacion{
-  margin: auto;
-}
+  margin: auto;}
 
 .mapa-ubicacion iframe{
   width: 100%;
-  max-width: 500px;
-}
+  max-width: 500px;}
 
-.platos{
+/* .platos{
   display:inline-flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: space-between;
-  flex: 1 1 auto;
-}
+  flex: 1 1 auto;} */
 
-.img-platos{
-  transition: all 2s;
-}
+/* .img-platos{
+  transition: all 2s;}
 
 .img-platos:hover{
     transform: scale(1.2,1.2);
     transition: all 0.5s 0.5s;
-    cursor: pointer
-}
+    cursor: pointer} */
 
 .mapa{
   text-align: center;
-  margin: 0 auto;
-}
+  margin: 0 auto;}
 
 /* Página recetas*/
 
