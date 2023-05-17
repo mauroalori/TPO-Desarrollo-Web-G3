@@ -260,8 +260,7 @@ li {
     li {
       text-align: left;};
     textarea{
-      width: 10px;
-    }
+      width: 10px;}
     }
      
   .texto-ubicacion{
@@ -310,6 +309,44 @@ li {
 .mapa{
   text-align: center;
   margin: 0 auto;}
+
+/* Página Curiosidades */
+.section-main-curiosidades{
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  padding: 4em 0;}
+
+p {
+  padding-bottom: 1em;}
+
+.texto_sup{
+  font-size: 1.2em;
+  text-align: center;
+  color: black;
+  font-weight: bold;}
+
+  .curiosidades{
+    border: 1px solid;
+    
+    width: 100%;
+    max-width: 900px;
+    color: black;
+    background-color: rgb(218, 205, 190);
+    padding: 10px;
+    text-align: center;
+    margin: 2em auto;
+    box-shadow: 10px 10px 10px rgb(105, 103, 103);}
+  
+  .texto-Con1{
+    font-weight: bold;
+    text-align: left;
+  }
+  .texto1-Con1{
+    font-weight: bold;
+  font-style: italic;
+  }
+
 
 /* Página recetas*/
 
