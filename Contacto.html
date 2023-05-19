@@ -27,7 +27,7 @@
         <ul class="nav-list">
           <li class="nav-item"><a href="index.html">Inicio</a></li>
           <li class="nav-item"><a href="recetas.html">Recetas</a></li>
-          <li class="nav-item"><a href="consejos-trucos.html">Consejos | Trucos</a></li>
+          <li class="nav-item"><a href="Curiosidades.html">Curiosidades</a></li>
           <li class="nav-item"><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
@@ -44,7 +44,7 @@
         <p class="texto_sup">Déjanos tu contacto y preferencias y forma parte de de la Comunidad Paolo`s...</p>
 
         <form action="" method="get" class="formulario" onsubmit="return validarFormulario()">
-            <label for="nombre"><b>Nombre:</b>
+          <label for="nombre"><b>Nombre:</b>
               <input type="text" name="nombre" size="30" maxlength="50" placeholder="Ingrese su nombre..." id="nombre">
             </label>
             <br>
@@ -54,7 +54,7 @@
             <br>
             <label for="comentario"><b>Comentario y/o sugerencia:</b>
               <br>
-              <textarea name="comentario" rows="8" cols="45" id="comentario" placeholder="Escribe tu comentario (máximo 300 caracteres)" maxlength="300"></textarea>
+              <textarea name="comentario" rows="8" cols="45" Id="comentario" placeholder="Escribe tu comentario (máximo 300 caracteres)" maxlength="300"></textarea>
             </label>
             <br>
             <label for="pais"><b>Vivo en:</b>
@@ -68,23 +68,28 @@
             </label>
             <br>
             <br>
-
-            <p class="T2">Cuales son tus preferencias?</p>
-
-            <input type="checkbox" name="opcion" id="" value="Item 1">Platos calientes
-            <input type="checkbox" name="opcion" id="">Platos frios
-            <input type="checkbox" name="opcion" id="">Postres
+            
+            <label for="frecuencia-informacion"><b>Cuales son tus preferencias?</b>
+            <ul>
+              <li><input type="checkbox" name="opcion" id="" value="Item 1">Platos calientes</li>
+              <li><input type="checkbox" name="opcion" id="">Platos frios</li>
+              <li><input type="checkbox" name="opcion" id="">Postres</li>
+            </ul>
+            </label>
             <br>
             <br>
             <label for="frecuencia-informacion"><b>Quiero recibir información:</b>
-              <input type="radio" name="frecuencia-informacion" value="diaria" checked>Diaria
-              <input type="radio" name="frecuencia-informacion" value="semanal">Semanal
-              <input type="radio" name="frecuencia-informacion" value="mensual">Mensual
-              <input type="radio" name="frecuencia-informacion" value="none">No enviarme por ahora
+              <ul>
+              <li><input type="radio" name="frecuencia-informacion" value="diaria" checked>Diaria</li>
+              <li><input type="radio" name="frecuencia-informacion" value="semanal">Semanal</li>
+              <li><input type="radio" name="frecuencia-informacion" value="mensual">Mensual</li>
+              <li><input type="radio" name="frecuencia-informacion" value="none">No enviarme por ahora</li>
+              </ul>
+              
             </label>
             <br>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Borrar">
+            <input type="submit" value="   Enviar   ">
+            <input type="reset" value="   Borrar   ">
             
         </form>
 
