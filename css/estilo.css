@@ -334,14 +334,13 @@ p {
 
   .curiosidades{
     border: 1px solid;
-    
     width: 100%;
     max-width: 900px;
     color: black;
     background-color: rgb(218, 205, 190);
     padding: 10px;
     text-align: center;
-    margin: 2em auto;
+    margin: 3em auto;
     box-shadow: 10px 10px 10px rgb(105, 103, 103);}
   
   .texto-Con1{
