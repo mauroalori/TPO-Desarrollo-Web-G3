@@ -156,6 +156,16 @@ p {
   font-weight: bold;
 }
 
+.recipe {
+  display: flex;
+  margin: 0 0 30px
+}
+
+.recipe img {
+  border-radius: 8px;
+  margin-right: 20px;
+  max-width: 200px;
+}
 
 .filtrado-recetas{
   max-width: 1300px;
@@ -355,9 +365,16 @@ p {
 
 /* Página recetas*/
 
-.main-recetas{
+.main-recetas {
   width: 100vw;
   background-color: lightgray;
+}
+
+.titulo-platos {
+  border-bottom: 1px solid #000;
+  margin-bottom: 0.5em;
+  padding-bottom: 0.25em; 
+  font-size: 50px;
 }
 
 .main-container{

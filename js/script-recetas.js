@@ -12,6 +12,27 @@ function modificarDisplayPlatos() {
   }
 }
 
+function loadRecetas(tipo) {
+  const baseUrl = 'https://api.edamam.com/search?app_id=900da95e&app_key=40698503668e0bb3897581f4766d77f9&q=';
+  const frios = $.ajax({
+    url: baseUrl + tipo,
+    context: document.body
+  }).done(function(result) {
+    const html = ({ label, image, ingredients }) => `
+      <div class="recipe">
+        <img src="${image}" />
+        <div>
+          <h3>${label}</h3>
+          <ul>
+            ${ingredients.map(i => `<li>${i}</li>`)}
+          </ul>
+        </div>
+      </div>
+    `;
+    $(`#${tipo}`).html(result.hits.slice(0,2).map(({ recipe }) => html({ label: recipe.label, image: recipe.image, ingredients: recipe.ingredientLines })));
+  });
+}
+
 function load() {
   const checkboxFiltrado = sessionStorage.getItem("idFiltrado");
   const checkboxs = document.getElementsByName("filtro-platos");
@@ -24,6 +45,9 @@ function load() {
     }
   }
   sessionStorage.removeItem("idFiltrado");
+  loadRecetas('caliente');
+  loadRecetas('frio');
+  loadRecetas('dulce');
 }
 
 document.addEventListener("DOMContentLoaded", load, false);
