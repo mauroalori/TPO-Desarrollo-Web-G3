@@ -197,7 +197,6 @@ p {
 .container-imgs-filtrado-recetas > .item-imgs-filtrado-recetas > img{
   border-radius: 2em;
   box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.3), -1px -1px 2px 2px rgba(0, 0, 0, 0.3);
-  transition: all 0.5s;
 }
 
 .container-imgs-filtrado-recetas > .item-imgs-filtrado-recetas > img:hover{
@@ -207,11 +206,11 @@ p {
 }
 
 .item-imgs-filtrado-recetas{
-  transition: all 2s;}
+  transition: all 1s;}
 
 .item-imgs-filtrado-recetas:hover{
   transform: scale(1.2,1.2);
-  transition: all 0.5s 0.5s;
+  transition: all 0.5s;
   cursor: pointer}
 
 /* Página Contacto */
@@ -306,21 +305,6 @@ li {
 .mapa-ubicacion iframe{
   width: 100%;
   max-width: 500px;}
-
-/* .platos{
-  display:inline-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: space-between;
-  flex: 1 1 auto;} */
-
-/* .img-platos{
-  transition: all 2s;}
-
-.img-platos:hover{
-    transform: scale(1.2,1.2);
-    transition: all 0.5s 0.5s;
-    cursor: pointer} */
 
 .mapa{
   text-align: center;
