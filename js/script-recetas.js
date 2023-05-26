@@ -20,13 +20,12 @@ function loadRecetas(tipo) {
   }).done(function(result) {
     const html = ({ label, image, ingredients }) => `
       <div class="recipe">
+      <h3>${label}</h3>
         <img src="${image}" />
-        <div>
-          <h3>${label}</h3>
-          <ul>
-            ${ingredients.map(i => `<li>${i}</li>`)}
-          </ul>
-        </div>
+        <ul>
+          ${ingredients.map(i => `<li>${i}</li>`)}
+        </ul>
+
       </div>
     `;
     $(`#${tipo}`).html(result.hits.slice(0,2).map(({ recipe }) => html({ label: recipe.label, image: recipe.image, ingredients: recipe.ingredientLines })));

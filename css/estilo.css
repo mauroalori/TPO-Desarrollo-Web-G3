@@ -158,13 +158,25 @@ p {
 
 .recipe {
   display: flex;
-  margin: 0 0 30px
+  margin: 0 0 30px;
+  flex-wrap: wrap;
 }
 
 .recipe img {
   border-radius: 8px;
   margin-right: 20px;
-  max-width: 200px;
+  width: 200px;
+  height: 200px;
+  padding-bottom: .5em;
+}
+
+.recipe h3 {
+  width: 100%;
+  padding-bottom: .5em;
+}
+
+.recipe ul {
+  width: 100%;
 }
 
 .filtrado-recetas{
@@ -273,6 +285,7 @@ textarea{
   resize: none;
   width: 100%;
   columns: 40;
+  border-radius: 10px;
 }
 
 /*Estilo form*/
@@ -304,12 +317,12 @@ textarea{
 }
 
 .botones .button_submit{
-  background-color: rgb(207, 245, 103);
+  background-color: rgb(251, 165, 165);
   /* background-color: rgba(206,235,215,255); */
 }
 
 .botones .button_erase{
-  background-color: rgb(251, 165, 165);
+  background-color: rgb(214, 209, 209);
 }
 
 .button_submit, .button_erase {
@@ -320,6 +333,7 @@ textarea{
   background-color: red;
   border-radius: 5px;
   border: none;
+  box-shadow: 2px 2px 3px 0px #212529;
   font-weight: 500;
   text-transform: uppercase;
   margin: 0 4em;
@@ -387,7 +401,7 @@ form label{
   width: 100%;
   max-width: 1300px;
   margin: auto;
-  padding: 4em 0;}
+  padding: 4em 3em;}
 
 p {
   padding-bottom: 1em;}
@@ -414,11 +428,14 @@ p {
     font-weight: bold;
     text-align: left;
   }
-  .texto1-Con1{
-    font-weight: bold;
-  font-style: italic;
+  .curiosidades h3{
+    font-size: 35px;
   }
-
+  .curiosidades img{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+  }
 
 /* Página recetas*/
 
