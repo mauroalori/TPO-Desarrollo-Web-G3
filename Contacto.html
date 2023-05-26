@@ -40,56 +40,54 @@
 
     <main class="main-contacto">
       <section class="section-main-contacto">
-        <p class="texto_sup">Desea recibir información sobre nuevas recetas y consejos útiles?</p>
-        <p class="texto_sup">Déjanos tu contacto y preferencias y forma parte de de la Comunidad Paolo`s...</p>
+        <p class="texto_sup">¿Desea recibir información sobre nuevas recetas y consejos útiles?</p>
+        <p class="texto_sup">Déjanos tu contacto y preferencias y forma parte de de la Comunidad Paolo's...</p>
 
         <form action="" method="get" class="formulario" onsubmit="return validarFormulario()">
-          <label for="nombre"><b>Nombre:</b>
-              <input type="text" name="nombre" size="30" maxlength="50" placeholder="Ingrese su nombre..." id="nombre">
+          <label class="datos" for="nombre">
+              <b>Nombre</b>
+              <input type="text" name="nombre" maxlength="50" placeholder="Ingrese su nombre..." id="nombre">
             </label>
-            <br>
-            <label for="email"><b>e-mail:</b>
-              <input type="text" name="email" size="30" maxlength="50" placeholder="Ingrese su e-mail..." id="email">
+            <label class="datos" for="email">
+              <b>E-mail</b>
+              <input type="text" name="email" maxlength="50" placeholder="Ingrese su e-mail..." id="email">
             </label>
-            <br>
-            <label for="comentario"><b>Comentario y/o sugerencia:</b>
+            <label id="label-comentarios" for="comentario"><b>Comentario y/o sugerencia:</b>
               <br>
-              <textarea name="comentario" rows="8" cols="45" Id="comentario" placeholder="Escribe tu comentario (máximo 300 caracteres)" maxlength="300"></textarea>
+              <textarea name="comentario" rows="8" Id="comentario" placeholder="Escribe tu comentario (máximo 300 caracteres)" maxlength="300"></textarea>
             </label>
-            <br>
             <label for="pais"><b>Vivo en:</b>
               <select name="pais" id="pais">
                 <option value="ARG" selected>Argentina</option>
                 <option value="URU">Uruguay</option>
                 <option value="BRA">Brasil</option>
                 <option value="CHI">Chile</option>
-                <option value="REST">Resto del mundo</option>
+                <option value="REST">Otro</option>
               </select>
             </label>
             <br>
-            <br>
             
-            <label for="frecuencia-informacion"><b>Cuales son tus preferencias?</b>
-            <ul>
-              <li><input type="checkbox" name="opcion" id="" value="Item 1">Platos calientes</li>
-              <li><input type="checkbox" name="opcion" id="">Platos frios</li>
-              <li><input type="checkbox" name="opcion" id="">Postres</li>
+            <label for="opcion-platos"><b class="titulo-input">¿Cuáles son tus preferencias?</b>
+            <ul class="checkbox-preferencias">
+              <li><input type="checkbox" name="opcion-platos" id=""><p>Platos frios</p></li>
+              <li><input type="checkbox" name="opcion-platos" id="" value="Item 1"><p>Platos calientes</p></li>
+              <li><input type="checkbox" name="opcion-platos" id=""><p>Postres</p></li>
             </ul>
             </label>
-            <br>
-            <br>
-            <label for="frecuencia-informacion"><b>Quiero recibir información:</b>
-              <ul>
-              <li><input type="radio" name="frecuencia-informacion" value="diaria" checked>Diaria</li>
-              <li><input type="radio" name="frecuencia-informacion" value="semanal">Semanal</li>
-              <li><input type="radio" name="frecuencia-informacion" value="mensual">Mensual</li>
-              <li><input type="radio" name="frecuencia-informacion" value="none">No enviarme por ahora</li>
+            <label for="frecuencia-informacion"><b class="titulo-input">Quiero recibir información:</b>
+              <ul class="radio-frecuencia-envio">
+                <li><input type="radio" name="frecuencia-informacion" value="diaria" checked><p>Diaria</p></li>
+                <li><input type="radio" name="frecuencia-informacion" value="semanal"><p>Semanal</p></li>
+                <li><input type="radio" name="frecuencia-informacion" value="mensual"><p>Mensual</p></li>
+                <li><input type="radio" name="frecuencia-informacion" value="none"><p>No enviarme por ahora</p></li>
               </ul>
-              
             </label>
             <br>
-            <input type="submit" value="   Enviar   ">
-            <input type="reset" value="   Borrar   ">
+            <br>
+            <div class="botones">
+              <input type="reset" class="button_erase" value="   Borrar   ">
+              <input type="submit" class="button_submit" value="   Enviar   ">
+            </div>
             
         </form>
 

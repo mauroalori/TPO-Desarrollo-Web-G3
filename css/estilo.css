@@ -225,58 +225,133 @@ p {
   width: 100%;
   max-width: 1300px;
   margin: auto;
-  padding: 6em 0;}
+  padding: 6em 0;
+}
 
 p {
-  padding-bottom: 1em;}
+  padding-bottom: 1em;
+}
 
 .texto_sup{
   font-size: 1.2em;
   text-align: center;
   color: black;
-  font-weight: bold;}
+  font-weight: bold;
+}
 
 .formulario{
   text-align: center;
   border: none;
   border-radius:22px;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2), -2px -2px 2px 2px rgba(0, 0, 0, 0.2);
   color: black;
-  background-color: beige;
   position: relative;
   width: 100%;
   max-width: 800px;
   margin: 2em auto;
   padding-bottom: 20px;
-  box-shadow: 10px 10px 10px rgb(105, 103, 103);}
+  box-shadow: 10px 10px 10px rgb(105, 103, 103), -10px -10px 10px rgb(105, 103, 103);
+  display: flex;
+  flex-direction: column;
+}
+
+.datos{
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+
+#label-comentarios{
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+textarea{
+  display: inline-block;
+  resize: none;
+  width: 100%;
+  columns: 40;
+}
+
+/*Estilo form*/
+.formulario input {
+  height: 54px;
+  border-radius: 5px;
+  background: white;
+  margin-bottom: 15px;
+  border: none;
+  padding: 0 20px;
+  font-weight: 300;
+  font-size: 14px;
+  color: #4B4B4B;
+}
+
+.button_submit:hover, .formulario input:hover {
+  transform: scale(1.009);
+  box-shadow: 0px 0px 3px 0px #212529;
+}
+
+.botones{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.botones input{
+  color: #000;
+}
+
+.botones .button_submit{
+  background-color: rgb(207, 245, 103);
+  /* background-color: rgba(206,235,215,255); */
+}
+
+.botones .button_erase{
+  background-color: rgb(251, 165, 165);
+}
+
+.button_submit, .button_erase {
+  width: 100%;
+  max-width: 200px;
+  font-size: 14px;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  border: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0 4em;
+}
+
+.radio-frecuencia-envio, .checkbox-preferencias{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.checkbox-preferencias li, .radio-frecuencia-envio li{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1em;
+}
+
+.checkbox-preferencias li p, .radio-frecuencia-envio li p{
+  padding-left: 0.5em;
+}
 
 form label{
   display: inline-block;
-  padding: 1em 2em;}
-
-textarea{
-  resize: none;}
+  padding: 1em 2em;
+}
 
 .T2{
   color: black;
   font-weight: bold;
   text-align: center;}
-
-/* Media Queries */
-@media (min-width: 900px){
-li {
-  display: inline;}}
-
-@media (min-width: 500px){
-  li {
-    text-align: left;}}
-
-@media (max-width: 500px){
-    li {
-      text-align: left;};
-    textarea{
-      width: 10px;}
-    }
      
   .texto-ubicacion{
   font-size: 1.2em;
@@ -290,14 +365,11 @@ li {
   width: 100%;
   max-width: 600px;
   color: black;
-  background-color: bisque;
   padding: 10px;
   text-align: center;
   margin: 4em auto;
-  box-shadow: 10px 10px 10px rgb(105, 103, 103);}
+  box-shadow: 10px 10px 10px rgb(105, 103, 103), -10px -10px 10px rgb(105, 103, 103);}
 
-.ubicacion-del-local p{
-  font-style: italic;}
 
 .mapa-ubicacion{
   margin: auto;}
@@ -328,6 +400,7 @@ p {
 
   .curiosidades{
     border: 1px solid;
+    border-radius: 25px;
     width: 100%;
     max-width: 900px;
     color: black;
@@ -515,6 +588,7 @@ footer a {
 .footer-text {
   flex-shrink: 0.3;
   padding: 0 2em;
+  color: rgb(73, 73, 73);
 }
 
 #footer-contact-us {
@@ -522,6 +596,20 @@ footer a {
 }
 
 /*Media queries*/
+@media (min-width: 900px){
+  li {
+    display: inline;}}
+  
+  @media (min-width: 500px){
+    li {
+      text-align: left;}}
+  
+  @media (max-width: 500px){
+      li {
+        text-align: left;};
+      textarea{
+        width: 10px;}
+      }
 @media (max-width: 992px) {
   h1 {
     padding: 0.5em 0;
@@ -607,4 +695,26 @@ footer a {
   .icon-list-container{
     width: 80vw;
   }
+
+  .radio-frecuencia-envio, .checkbox-preferencias{
+    flex-direction: column;
+    align-items: center;
+  }
+  .radio-frecuencia-envio li, .checkbox-preferencias li{
+    height: 35px;
+    justify-content: flex-start;
+    width: 200px;
+  }
+  .titulo-input{
+    display: inline-block;
+    padding-bottom: 1em;
+  }
+  .botones{
+    flex-direction: column;
+  }
+  .botones input{
+    margin: auto;
+    margin-bottom: 1em;
+  }
+
 }
