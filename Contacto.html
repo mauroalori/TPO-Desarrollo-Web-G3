@@ -40,23 +40,23 @@
 
     <main class="main-contacto">
       <section class="section-main-contacto">
-        <p class="texto_sup">¿Desea recibir información sobre nuevas recetas y consejos útiles?</p>
-        <p class="texto_sup">Déjanos tu contacto y preferencias y forma parte de de la Comunidad Paolo's...</p>
+        <p class="texto_sup">¿Deseas recibir información sobre nuevas recetas y curiosidades culinarias? <br>¿O simplemente quieres dejarme un comentario y/o sugerencia?</p>
+        <p class="texto_sup">Completa con tus datos de contacto y la información solicitada a continuación,<br> ¡y me pondré en contacto contigo a la brevedad!</p>
 
         <form action="" method="get" class="formulario" onsubmit="return validarFormulario()">
           <label class="datos" for="nombre">
-              <b>Nombre</b>
-              <input type="text" name="nombre" maxlength="50" placeholder="Ingrese su nombre..." id="nombre">
+              <b>Nombre:</b>
+              <input type="text" name="nombre" maxlength="50" placeholder="Ingresa tu nombre..." id="nombre">
             </label>
             <label class="datos" for="email">
-              <b>E-mail</b>
-              <input type="text" name="email" maxlength="50" placeholder="Ingrese su e-mail..." id="email">
+              <b>E-mail:</b>
+              <input type="text" name="email" maxlength="50" placeholder="Ingresa tu e-mail..." id="email">
             </label>
             <label id="label-comentarios" for="comentario"><b>Comentario y/o sugerencia:</b>
               <br>
-              <textarea name="comentario" rows="8" Id="comentario" placeholder="Escribe tu comentario (máximo 300 caracteres)" maxlength="300"></textarea>
+              <textarea name="comentario" rows="8" Id="comentario" placeholder= "Si lo deseas, puedes dejar uno aquí (máximo 300 caracteres)" maxlength="300"></textarea>
             </label>
-            <label for="pais"><b>Vivo en:</b>
+            <label for="pais"><b>País de residencia:</b>
               <select name="pais" id="pais">
                 <option value="ARG" selected>Argentina</option>
                 <option value="URU">Uruguay</option>
@@ -69,17 +69,18 @@
             
             <label for="opcion-platos"><b class="titulo-input">¿Cuáles son tus preferencias?</b>
             <ul class="checkbox-preferencias">
-              <li><input type="checkbox" name="opcion-platos" id=""><p>Platos frios</p></li>
+              <li><input type="checkbox" name="opcion-platos" id=""><p>Platos fríos</p></li>
               <li><input type="checkbox" name="opcion-platos" id="" value="Item 1"><p>Platos calientes</p></li>
               <li><input type="checkbox" name="opcion-platos" id=""><p>Postres</p></li>
+              <li><input type="checkbox" name="opcion-platos" id=""><p>Ninguna</p></li>
             </ul>
             </label>
-            <label for="frecuencia-informacion"><b class="titulo-input">Quiero recibir información:</b>
+            <label for="frecuencia-informacion"><b class="titulo-input">Deseas recibir información:</b>
               <ul class="radio-frecuencia-envio">
                 <li><input type="radio" name="frecuencia-informacion" value="diaria" checked><p>Diaria</p></li>
                 <li><input type="radio" name="frecuencia-informacion" value="semanal"><p>Semanal</p></li>
                 <li><input type="radio" name="frecuencia-informacion" value="mensual"><p>Mensual</p></li>
-                <li><input type="radio" name="frecuencia-informacion" value="none"><p>No enviarme por ahora</p></li>
+                <li><input type="radio" name="frecuencia-informacion" value="none"><p>Ninguna</p></li>
               </ul>
             </label>
             <br>
@@ -92,8 +93,8 @@
         </form>
 
         <div class="ubicacion-del-local">
-          <p class="texto-ubicacion">También podés encontrarme en la siguiente dirección...</p>
-          <p class="direccion">Av. Corrientes 123 - C.A.B.A - Buenos Aires - Argentina</p>
+          <p class="texto-ubicacion">También puedes encontrarme en la siguiente dirección...</p>
+          <p class="direccion">Av. Corrientes 123 - C.A.B.A - Buenos Aires, Argentina</p>
           <div class="mapa-ubicacion">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.054559063422!2d-58.37187172452466!3d-34.602781857448385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335328cf47ae3%3A0xfca7e6698a8bd0b4!2sAv.%20Corrientes%20123%2C%20C1043%20San%20Nicolas%2C%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2ses!4v1682286165658!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
           </div>
@@ -104,7 +105,7 @@
 
     <footer>
       <section class="section-footer">
-        <p class="footer-text">¡SEGUINOS EN NUESTRAS REDES!</p>
+        <p class="footer-text">VISITA MIS REDES</p>
         <div class="icon-list-container">
           <ul class="footer-icon-list">
             <li class="footer-icon">
@@ -122,7 +123,7 @@
           </ul>
         </div>
         <a href="contacto.html" id="footer-contact-us"
-          ><p class="footer-text">¡CONTACTANOS!</p></a>
+          ><p class="footer-text">CONTÁCTAME</p></a>
           
       </section>
     </footer>
