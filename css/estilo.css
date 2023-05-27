@@ -163,7 +163,7 @@ p {
   background-color: rgb(218, 205, 190);
   padding: 20px;
   border-radius: 20px;
-  box-shadow: 10px 10px 10px rgb(105, 103, 103);
+  box-shadow: 10px 10px 10px rgb(105, 103, 103),-2px -2px 3px rgb(105, 103, 103);
 }
 
 .recipe img {
