@@ -253,7 +253,8 @@ p {
 
 .formulario{
   text-align: center;
-  border: none;
+  border: solid;
+  border-width: 3px;
   border-radius:22px;
   color: black;
   position: relative;
@@ -261,7 +262,8 @@ p {
   max-width: 800px;
   margin: 2em auto;
   padding-bottom: 20px;
-  box-shadow: 10px 10px 10px rgb(105, 103, 103), -10px -10px 10px rgb(105, 103, 103);
+  padding-top: 15px;
+  /* box-shadow: 10px 10px 10px rgb(105, 103, 103), -10px -10px 10px rgb(105, 103, 103); */
   display: flex;
   flex-direction: column;
 }
@@ -374,15 +376,18 @@ form label{
   font-weight: bold;}
 
 .ubicacion-del-local{
-  border: 1px solid;
+  border: 3px solid;
   border-radius:22px;
   width: 100%;
   max-width: 600px;
   color: black;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
   margin: 4em auto;
-  box-shadow: 10px 10px 10px rgb(105, 103, 103), -10px -10px 10px rgb(105, 103, 103);}
+  max-width: 800px;
+  padding-bottom: 30px;
+  /* box-shadow: 10px 10px 10px rgb(105, 103, 103), -10px -10px 10px rgb(105, 103, 103); */
+}
 
 
 .mapa-ubicacion{
@@ -619,17 +624,38 @@ footer a {
   
   @media (min-width: 500px){
     li {
-      text-align: left;}}
+      text-align: left;}
+     
+    }
   
   @media (max-width: 500px){
       li {
         text-align: left;};
       textarea{
         width: 10px;}
+      
+      .formulario{
+        border: none;
       }
+
+      .ubicacion-del-local{
+        border: none;
+      }
+      
+      }
+
+   
 @media (max-width: 992px) {
   h1 {
     padding: 0.5em 0;
+  }
+
+  .formulario{
+    border: none;
+  }
+
+  .ubicacion-del-local{
+    border: none;
   }
 
   header {
