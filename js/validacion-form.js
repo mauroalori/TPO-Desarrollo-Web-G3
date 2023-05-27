@@ -2,7 +2,7 @@ function validarFormulario() {
   const nombre = document.querySelector("#nombre").value.trim();
   const email = document.querySelector("#email").value.trim();
   const comentario = document.querySelector("#comentario").value.trim();
-  const checkboxs = document.querySelectorAll("[name='opcion']");
+  const checkboxs = document.querySelectorAll("[name='opcion-platos']");
 
   // Verificar si el campo de nombre está en blanco
   if (nombre === "") {
