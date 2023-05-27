@@ -34,12 +34,6 @@ function validarFormulario() {
     }
   }
 
-  // Verificar si el campo de comentario está en blanco
-  if (comentario === "") {
-    alert("No ingresó su mensaje.");
-    return false;
-  }
-
   // Verificar que se haya seleccionado al menos una de las opciones del checkbox
   let alMenosUno = false;
   for(let i=0; i<checkboxs.length; i++){

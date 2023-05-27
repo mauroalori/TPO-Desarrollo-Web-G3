@@ -160,14 +160,18 @@ p {
   display: flex;
   margin: 0 0 30px;
   flex-wrap: wrap;
+  background-color: rgb(218, 205, 190);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgb(105, 103, 103);
 }
 
 .recipe img {
-  border-radius: 8px;
+  border-radius: 20px;
   margin-right: 20px;
+  margin-bottom: 20px;
   width: 200px;
   height: 200px;
-  padding-bottom: .5em;
 }
 
 .recipe h3 {
@@ -254,7 +258,7 @@ p {
 .formulario{
   text-align: center;
   border: solid;
-  border-width: 3px;
+  border-width: 1px;
   border-radius:22px;
   color: black;
   position: relative;
@@ -263,7 +267,7 @@ p {
   margin: 2em auto;
   padding-bottom: 20px;
   padding-top: 15px;
-  /* box-shadow: 10px 10px 10px rgb(105, 103, 103), -10px -10px 10px rgb(105, 103, 103); */
+  box-shadow: 10px 10px 10px rgb(105, 103, 103), -10px -10px 10px rgb(105, 103, 103);
   display: flex;
   flex-direction: column;
 }
@@ -288,6 +292,12 @@ textarea{
   width: 100%;
   columns: 40;
   border-radius: 10px;
+  padding: 10px;
+}
+
+#pais{
+  padding: 5px;
+  padding-right: 10px;
 }
 
 /*Estilo form*/
@@ -376,7 +386,7 @@ form label{
   font-weight: bold;}
 
 .ubicacion-del-local{
-  border: 3px solid;
+  border: 1px solid;
   border-radius:22px;
   width: 100%;
   max-width: 600px;
@@ -386,7 +396,7 @@ form label{
   margin: 4em auto;
   max-width: 800px;
   padding-bottom: 30px;
-  /* box-shadow: 10px 10px 10px rgb(105, 103, 103), -10px -10px 10px rgb(105, 103, 103); */
+  box-shadow: 10px 10px 10px rgb(105, 103, 103), -10px -10px 10px rgb(105, 103, 103);
 }
 
 
@@ -416,6 +426,12 @@ p {
   text-align: center;
   color: black;
   font-weight: bold;}
+
+#titulo-curiosidades{
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
 
   .curiosidades{
     border: 1px solid;
